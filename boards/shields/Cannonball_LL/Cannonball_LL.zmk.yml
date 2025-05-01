@@ -6,5 +6,5 @@ url: https://github.com/Taro-Hayashi/zmk-config
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-  - pointer
+  # - pointer
   - encoder

@@ -6,12 +6,6 @@ if CANNONBALL_LL
     config ZMK_POINTING
         default y
 
-    config SPI
-        default y
-
-    config PMW3610
-        default y
-
     config INPUT
         default y
 
