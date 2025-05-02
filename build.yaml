@@ -1,6 +1,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: Cannonball_LL rgbled_adapter
+    shield: Cannonball_LL
   - board: seeeduino_xiao_ble
     shield: settings_reset
