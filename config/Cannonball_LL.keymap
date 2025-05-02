@@ -65,6 +65,8 @@
             label = "MOUSE_X";
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_X(100)>, <&mmv MOVE_X(-100)>;
+
+            tap-ms = <100>;
         };
 
         mouse_y: mouse_y {
@@ -72,6 +74,8 @@
             label = "MOUSE_Y";
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_Y(100)>, <&mmv MOVE_Y(-100)>;
+
+            tap-ms = <100>;
         };
     };
 
