@@ -64,14 +64,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_X";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
+            bindings = <&mmv MOVE_X(100)>, <&mmv MOVE_X(-100)>;
         };
 
         mouse_y: mouse_y {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_Y";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
+            bindings = <&mmv MOVE_Y(100)>, <&mmv MOVE_Y(-100)>;
         };
     };
 
