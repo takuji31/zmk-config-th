@@ -59,6 +59,20 @@
 
             tap-ms = <65>;
         };
+
+        mouse_x: mouse_x {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_X";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
+        };
+
+        mouse_y: mouse_y {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_Y";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&mmv MOVE_DOWN>;
+        };
     };
 
     /* キーマップ */
@@ -76,8 +90,8 @@
 
             sensor-bindings =
                 <&inc_dec_kp LA(TAB) LA(LS(TAB))>,
-                <&scroll_move_x>,
-                <&scroll_move_y>;
+                <&mouse_x>,
+                <&mouse_y>;
         };
 
         // MacOS用
